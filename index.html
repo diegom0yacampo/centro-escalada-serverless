@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vértice Rocódromo · Centro de escalada en Zaragoza</title>
+  <meta name="description" content="Rocódromo de búlder y cuerda en Zaragoza. Pide tu sesión de prueba gratis con monitor y material incluido.">
+  <meta name="theme-color" content="#2B3644">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-30 -30 60 60'%3E%3Cpath d='M-24,-4 C-22,-17 20,-19 24,-5 C26,6 14,14 0,14 C-15,14 -26,6 -24,-4Z' fill='%23FFC21A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#prueba">Ir al formulario de sesión de prueba</a>
+
+  <!-- Formas de las presas, reutilizadas en toda la página -->
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="jug">
+        <path d="M-24,-4 C-22,-17 20,-19 24,-5 C26,6 14,14 0,14 C-15,14 -26,6 -24,-4Z"/>
+        <path d="M-13,-3 C-9,-9 9,-10 13,-3 C8,1 -8,1 -13,-3Z" fill="#000" fill-opacity=".28"/>
+        <circle r="2.2" cy="6" fill="#000" fill-opacity=".35"/>
+      </g>
+      <g id="sloper">
+        <path d="M-20,2 C-21,-13 17,-17 21,-3 C24,9 10,15 -2,15 C-14,15 -19,10 -20,2Z"/>
+        <path d="M-12,-6 C-6,-11 6,-12 12,-7" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="3" stroke-linecap="round"/>
+        <circle r="2.2" cy="4" fill="#000" fill-opacity=".35"/>
+      </g>
+      <g id="crimp">
+        <path d="M-15,-4 C-6,-7 8,-8 15,-5 C17,0 15,5 10,6 L-11,6 C-15,5 -17,0 -15,-4Z"/>
+        <circle r="1.8" cy="1" fill="#000" fill-opacity=".35"/>
+      </g>
+      <g id="pinch">
+        <path d="M-6,-17 C3,-19 9,-7 7,5 C5,16 -5,19 -8,7 C-11,-4 -13,-15 -6,-17Z"/>
+        <circle r="2" fill="#000" fill-opacity=".35"/>
+      </g>
+      <pattern id="tnuts" width="24" height="24" patternUnits="userSpaceOnUse">
+        <circle cx="12" cy="12" r="1.7" fill="#1C2430"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <svg viewBox="-30 -30 60 60" width="36" height="36" aria-hidden="true"><use href="#jug" fill="#FFC21A"/></svg>
+        <span>
+          <span class="brand-name">Vértice</span>
+          <span class="brand-sub">Rocódromo</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="nav-link" href="#pared">La pared</a>
+        <a class="nav-link" href="#precios">Clases y precios</a>
+        <a class="nav-link" href="#horarios">Horarios</a>
+        <a class="btn btn-primary btn-small" href="#prueba">Sesión de prueba</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: la pared con la vía amarilla -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <h1>Del suelo al top en tu primera tarde.</h1>
+          <p class="hero-lead">Vértice es un rocódromo de búlder y cuerda en Zaragoza. Tenemos 1.200&nbsp;m² de pared, cambiamos vías cada semana y nuestros monitores te acompañan desde el primer agarre.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#prueba">Pedir sesión de prueba</a>
+            <a class="text-link" href="#precios">Ver precios</a>
+          </div>
+          <p class="hero-note">La sesión de prueba es gratis e incluye pies de gato, arnés y magnesio.</p>
+        </div>
+
+        <figure class="wall">
+          <svg viewBox="0 0 420 600" role="img" aria-labelledby="wall-title">
+            <title id="wall-title">Pared de escalada con una vía de presas amarillas marcada desde el suelo hasta el top</title>
+            <!-- Paneles de la pared: vertical, desplome y techo -->
+            <polygon points="0,600 420,600 420,380 0,410" fill="#2B3644"/>
+            <polygon points="0,410 420,380 420,170 0,215" fill="#334050"/>
+            <polygon points="0,215 420,170 420,0 0,0" fill="#2B3644"/>
+            <rect width="420" height="600" fill="url(#tnuts)"/>
+            <path d="M0,410 L420,380 M0,215 L420,170" stroke="#1F2833" stroke-width="3"/>
+
+            <!-- Presas de otras vías -->
+            <g class="other-holds">
+              <use href="#crimp"  transform="translate(42 470) rotate(-12)" fill="#2FB36A"/>
+              <use href="#jug"    transform="translate(335 525) rotate(8)"  fill="#1E9BD7"/>
+              <use href="#sloper" transform="translate(382 445) rotate(-20)" fill="#E23C7E"/>
+              <use href="#pinch"  transform="translate(70 350) rotate(25)"  fill="#FF7A1A"/>
+              <use href="#crimp"  transform="translate(355 325) rotate(10)" fill="#2FB36A"/>
+              <use href="#jug"    transform="translate(110 245) rotate(30)" fill="#1E9BD7"/>
+              <use href="#sloper" transform="translate(58 160) rotate(-8)"  fill="#E23C7E"/>
+              <use href="#pinch"  transform="translate(372 215) rotate(-30)" fill="#FF7A1A"/>
+              <use href="#crimp"  transform="translate(150 118) rotate(-4)" fill="#1E9BD7"/>
+              <use href="#sloper" transform="translate(382 82) rotate(15)"  fill="#2FB36A"/>
+              <use href="#jug"    transform="translate(85 58) rotate(-15)"  fill="#FF7A1A"/>
+              <use href="#crimp"  transform="translate(310 425) rotate(-6)" fill="#E23C7E"/>
+              <use href="#sloper" transform="translate(40 560) rotate(5)"   fill="#1E9BD7"/>
+              <use href="#pinch"  transform="translate(330 285) rotate(-12)" fill="#8E5BD9"/>
+              <use href="#jug"    transform="translate(190 30) rotate(5)"   fill="#8E5BD9"/>
+            </g>
+
+            <!-- Magnesio en las presas más usadas -->
+            <g fill="#fff" opacity=".13">
+              <ellipse cx="205" cy="470" rx="22" ry="10"/>
+              <ellipse cx="245" cy="357" rx="24" ry="11"/>
+              <ellipse cx="280" cy="242" rx="22" ry="10"/>
+              <ellipse cx="300" cy="122" rx="24" ry="11"/>
+            </g>
+
+            <!-- La vía amarilla: se ilumina de abajo arriba al cargar -->
+            <g class="route-hold" style="--i:0"><use href="#jug"    transform="translate(120 545) rotate(-10)" fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:1"><use href="#sloper" transform="translate(205 478) rotate(10)"  fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:2"><use href="#crimp"  transform="translate(150 420) rotate(-8)"  fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:3"><use href="#jug"    transform="translate(245 365) rotate(20)"  fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:4"><use href="#pinch"  transform="translate(190 305) rotate(-15)" fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:5"><use href="#sloper" transform="translate(280 250) rotate(5)"   fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:6"><use href="#crimp"  transform="translate(220 190) rotate(-5)"  fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:7"><use href="#jug"    transform="translate(300 130) rotate(12)"  fill="#FFC21A"/></g>
+            <g class="route-hold" style="--i:8"><use href="#jug"    transform="translate(262 66) rotate(-6)"   fill="#FFC21A"/></g>
+
+            <!-- Cintas de grado y de top, como en un rocódromo real -->
+            <g transform="translate(70 584) rotate(-4)">
+              <rect x="-26" y="-11" width="52" height="22" fill="#FFC21A"/>
+              <text text-anchor="middle" y="7" class="tape-text">4+</text>
+            </g>
+            <g class="route-hold" style="--i:9">
+              <g transform="translate(330 70) rotate(4)">
+                <rect x="-28" y="-11" width="56" height="22" fill="#FFC21A"/>
+                <text text-anchor="middle" y="7" class="tape-text">TOP</text>
+              </g>
+            </g>
+          </svg>
+          <figcaption>La vía amarilla es un 4+. Casi todo el mundo la termina en su sesión de prueba.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ZONAS -->
+    <section class="section" id="pared">
+      <div class="wrap">
+        <h2>Tres zonas, una sola entrada</h2>
+        <p class="section-intro">Con la entrada de día puedes usar todas las zonas. Si nunca has escalado con cuerda, empieza por el búlder o apúntate al curso de iniciación.</p>
+        <table class="zones">
+          <thead>
+            <tr><th scope="col">Zona</th><th scope="col">Altura</th><th scope="col">Cómo se escala</th><th scope="col">Para quién</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Búlder</td>
+              <td data-label="Altura" class="zone-height">4,5 m</td>
+              <td data-label="Cómo se escala">Sin cuerda, sobre colchonetas de 40&nbsp;cm.</td>
+              <td data-label="Para quién">Desde el primer día.</td>
+            </tr>
+            <tr>
+              <td>Cuerda</td>
+              <td data-label="Altura" class="zone-height">15 m</td>
+              <td data-label="Cómo se escala">Con arnés y cuerda, en top-rope o de primero.</td>
+              <td data-label="Para quién">Después del curso de iniciación.</td>
+            </tr>
+            <tr>
+              <td>Kids</td>
+              <td data-label="Altura" class="zone-height">3 m</td>
+              <td data-label="Cómo se escala">Bloques bajos y presas grandes.</td>
+              <td data-label="Para quién">De 4 a 12 años, con un adulto.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CIRCUITO DE COLORES -->
+    <section class="section circuit" id="colores">
+      <div class="wrap">
+        <h2>Cómo leer la pared</h2>
+        <p class="section-intro">Cada vía está marcada por el color de sus presas. Elige un color y sube usando solo las presas de ese color.</p>
+        <ul class="circuit-list">
+          <li class="circuit-item">
+            <svg viewBox="-24 -24 48 48" aria-hidden="true"><use href="#jug" fill="#FFC21A"/></svg>
+            <p class="circuit-name">Amarillo</p>
+            <p class="circuit-grade">4 a 5a</p>
+            <p class="circuit-text">Tu primera tarde.</p>
+          </li>
+          <li class="circuit-item">
+            <svg viewBox="-24 -24 48 48" aria-hidden="true"><use href="#sloper" fill="#2FB36A"/></svg>
+            <p class="circuit-name">Verde</p>
+            <p class="circuit-grade">5b a 6a</p>
+            <p class="circuit-text">Ya confías en los pies.</p>
+          </li>
+          <li class="circuit-item">
+            <svg viewBox="-24 -24 48 48" aria-hidden="true"><use href="#pinch" fill="#FF7A1A"/></svg>
+            <p class="circuit-name">Naranja</p>
+            <p class="circuit-grade">6a+ a 6b+</p>
+            <p class="circuit-text">Toca leer la vía antes de subir.</p>
+          </li>
+          <li class="circuit-item">
+            <svg viewBox="-24 -24 48 48" aria-hidden="true"><use href="#crimp" fill="#1E9BD7"/></svg>
+            <p class="circuit-name">Azul</p>
+            <p class="circuit-grade">6c a 7a</p>
+            <p class="circuit-text">Desplomes y pasos largos.</p>
+          </li>
+          <li class="circuit-item">
+            <svg viewBox="-24 -24 48 48" aria-hidden="true"><use href="#jug" fill="#E23C7E"/></svg>
+            <p class="circuit-name">Rosa</p>
+            <p class="circuit-grade">7a+ a 7c</p>
+            <p class="circuit-text">Varias sesiones por vía.</p>
+          </li>
+          <li class="circuit-item">
+            <svg viewBox="-24 -24 48 48" aria-hidden="true"><use href="#crimp" class="hold-black" fill="#15191F"/></svg>
+            <p class="circuit-name">Negro</p>
+            <p class="circuit-grade">8a y más</p>
+            <p class="circuit-text">Proyectos para meses.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="section" id="precios">
+      <div class="wrap">
+        <h2>Clases y precios</h2>
+        <p class="section-intro">Sin matrícula ni permanencia. Todos los precios llevan el IVA incluido.</p>
+        <ul class="prices">
+          <li class="price-row is-free">
+            <p class="price-name">Sesión de prueba</p>
+            <p class="price-desc">90 minutos con monitor. Pies de gato, arnés y magnesio incluidos.</p>
+            <p class="price-value">Gratis</p>
+          </li>
+          <li class="price-row">
+            <p class="price-name">Entrada de día</p>
+            <p class="price-desc">Acceso a todas las zonas, sin límite de horas.</p>
+            <p class="price-value">11&nbsp;€</p>
+          </li>
+          <li class="price-row">
+            <p class="price-name">Bono de 10 entradas</p>
+            <p class="price-desc">Válido durante 6 meses. Puedes compartirlo.</p>
+            <p class="price-value">95&nbsp;€</p>
+          </li>
+          <li class="price-row">
+            <p class="price-name">Cuota mensual</p>
+            <p class="price-desc">Entradas ilimitadas y un 15&nbsp;% de descuento en cursos.</p>
+            <p class="price-value">49&nbsp;€/mes</p>
+          </li>
+          <li class="price-row">
+            <p class="price-name">Curso de iniciación a cuerda</p>
+            <p class="price-desc">4 sesiones de 2 horas. Al terminar puedes escalar con cuerda por tu cuenta.</p>
+            <p class="price-value">75&nbsp;€</p>
+          </li>
+          <li class="price-row">
+            <p class="price-name">Alquiler de pies de gato</p>
+            <p class="price-desc">Todas las tallas, de la 34 a la 47.</p>
+            <p class="price-value">3&nbsp;€</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="section section-alt" id="horarios">
+      <div class="wrap hours">
+        <div>
+          <h2>Horarios</h2>
+          <dl class="hours-list">
+            <div><dt>Lunes a viernes</dt><dd>10:00 a 23:00</dd></div>
+            <div><dt>Sábados</dt><dd>9:00 a 21:00</dd></div>
+            <div><dt>Domingos y festivos</dt><dd>9:00 a 15:00</dd></div>
+          </dl>
+        </div>
+        <div class="hours-side">
+          <p class="setting-note">Los martes por la mañana montamos vías nuevas. Ese día la zona de búlder abre a las 14:00.</p>
+          <p class="address"><strong>Dónde estamos</strong><br>Avenida del Rocódromo 12, 50015 Zaragoza.<br>Parking gratuito para clientes y aparcabicis en la entrada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO: conectado a API Gateway + Lambda + DynamoDB + SNS -->
+    <section class="section trial" id="prueba">
+      <div class="wrap trial-grid">
+        <div>
+          <h2>Pide tu sesión de prueba</h2>
+          <ol class="steps">
+            <li>Déjanos tu nombre y tu email.</li>
+            <li>Te escribimos en menos de 24 horas para elegir día y hora.</li>
+            <li>Ven con ropa cómoda. Los pies de gato, el arnés y el magnesio los ponemos nosotros.</li>
+          </ol>
+        </div>
+
+        <form class="form-panel" id="trial-form">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Pedir sesión de prueba</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-privacy">Solo usaremos tu email para organizar la sesión de prueba.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p><strong>Vértice Rocódromo</strong><br>Avenida del Rocódromo 12, 50015 Zaragoza</p>
+      <p>Proyecto Misión Serverless: web en GitHub Pages y Amazon S3, formulario conectado con API Gateway, Lambda, DynamoDB y SNS.</p>
+    </div>
+  </footer>
+
+  <!-- Conexión del formulario con nuestra API -->
+  <script src="js/api.js"></script>
+</body>
+</html>
