@@ -1,4 +1,4 @@
-// Lambda ebook-contact-02 · Misión Serverless (Vértice Rocódromo)
+// Lambda vertice-contact · Misión Serverless (Vértice Rocódromo)
 // API Gateway → Lambda → DynamoDB (persistir) → SNS (notificar)
 
 // DynamoDB: persistencia.
@@ -11,10 +11,10 @@ import crypto from 'crypto';
 const ddb = new DynamoDBClient({});
 const sns = new SNSClient({});
 
-const TABLE_NAME = 'ContactMessages';
+const TABLE_NAME = 'VerticeSolicitudes';
 
-// Topic ARN de EbookRequests (no es una credencial: sólo identifica el topic).
-const TOPIC_ARN = 'arn:aws:sns:us-east-1:267636056084:EbookRequests';
+// Topic ARN de VerticeNotificaciones (no es una credencial: sólo identifica el topic).
+const TOPIC_ARN = 'arn:aws:sns:us-east-1:267636056084:VerticeNotificaciones';
 
 export const handler = async (event) => {
   console.log('Evento HTTP recibido:', JSON.stringify(event));

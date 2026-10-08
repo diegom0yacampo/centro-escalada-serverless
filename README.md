@@ -10,11 +10,11 @@ Alumno: Diego Moya Campo · Grupo 2SI
 Web (GitHub Pages / Amazon S3)
         │  fetch POST (JSON)
         ▼
-API Gateway  POST /contact-02
+API Gateway  POST /contact
         ▼
-Lambda  ebook-contact-02 (Node.js, AWS SDK v3)
-        ├─▶ DynamoDB  ContactMessages   (guarda la solicitud)
-        └─▶ SNS       EbookRequests     (envía la notificación por email)
+Lambda  vertice-contact (Node.js, AWS SDK v3)
+        ├─▶ DynamoDB  VerticeSolicitudes   (guarda la solicitud)
+        └─▶ SNS       VerticeNotificaciones     (envía la notificación por email)
 ```
 
 ## URL del proyecto
@@ -23,7 +23,7 @@ Lambda  ebook-contact-02 (Node.js, AWS SDK v3)
 |---|---|
 | Web en GitHub Pages | https://diegom0yacampo.github.io/centro-escalada-serverless/ |
 | Web en Amazon S3 | http://vertice-rocodromo-moya.s3-website-us-east-1.amazonaws.com |
-| Endpoint de API Gateway | https://y1uuk8797g.execute-api.us-east-1.amazonaws.com/dev/contact-02 |
+| Endpoint de API Gateway | https://l9fwto4cai.execute-api.us-east-1.amazonaws.com/dev/contact |
 
 ## Estructura
 
@@ -37,7 +37,7 @@ lambda/index.mjs  Código de la función Lambda (copia del código desplegado)
 ## Cómo se prueba
 
 1. Abrir la web y rellenar el formulario de sesión de prueba.
-2. Comprobar en DynamoDB (`ContactMessages` → Explorar elementos) que aparece un item nuevo.
+2. Comprobar en DynamoDB (`VerticeSolicitudes` → Explorar elementos) que aparece un item nuevo.
 3. Comprobar que llega el email de SNS con los mismos datos.
 
 ## Seguridad

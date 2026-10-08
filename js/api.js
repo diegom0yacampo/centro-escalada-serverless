@@ -1,5 +1,5 @@
-// Endpoint real de API Gateway (POST /contact-02 → Lambda ebook-contact-02).
-const API_URL = 'https://y1uuk8797g.execute-api.us-east-1.amazonaws.com/dev/contact-02';
+// Endpoint real de API Gateway (POST /contact → Lambda vertice-contact).
+const API_URL = 'https://l9fwto4cai.execute-api.us-east-1.amazonaws.com/dev/contact';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('trial-form');
